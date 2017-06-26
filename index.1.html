@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="js/libs/jquery.min.js" type="text/javascript"></script> 
+    <script src="js/libs/knockout-3.2.0.js" type="text/javascript"></script> 
+    <script src="js/libs/jquery.min.js" type="text/javascript"></script> 
+    <script src="js/script.js" type="text/javascript"></script>  
+  </head>
+  <body>
+    <div class="container">
+      <div class="options-box">
+        <h1>Montréal No-Meat</h1>
+        <!-- <select data-bind="options: filters, value:selectedFilter, optionsText: 'title' "class="dropdown"></select>
+        <span data-bind="text: selectedVal"></span> -->
+        <ul class="location-list" data-bind="foreach:filtered()">
+            <li data-bind="text: title"></li>
+        </ul>
+        <div>
+          <input id="show-listings" type="button" value="Show Listings">
+          <input id="hide-listings" type="button" value="Hide Listings">
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+   </script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzj2481QAIXbvy_oxHHbJqp7Wj_X67p2o&v=3&callback=initMap">
+       
+   </script>
+     <!-- 
+var area = google.maps.geometry.spherical.computerArea(polygon.getPath());
+windows.alert(area+ "SQUARE METERS"); 
+-->
+ </body>
+</html>
+
